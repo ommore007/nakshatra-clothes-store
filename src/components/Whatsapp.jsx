@@ -1,5 +1,4 @@
-import "../styles/WhatsApp.css";
-
+import "../styles/Whatsapp.css";
 function WhatsAppButton() {
   return (
     <a
