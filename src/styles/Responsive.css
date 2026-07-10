@@ -1,0 +1,200 @@
+/* ===========================
+   GLOBAL MOBILE RESPONSIVE
+=========================== */
+
+*{
+box-sizing:border-box;
+}
+
+html,body{
+overflow-x:hidden;
+width:100%;
+}
+
+/* ===========================
+   TABLET
+=========================== */
+
+@media (max-width:992px){
+
+.navbar{
+padding:15px 25px !important;
+}
+
+.hero-content h1{
+font-size:52px !important;
+}
+
+.product-grid,
+.category-grid,
+.gallery-grid,
+.review-grid,
+.contact-info,
+.footer-content{
+grid-template-columns:repeat(2,1fr)!important;
+}
+
+}
+
+/* ===========================
+   MOBILE
+=========================== */
+
+@media (max-width:768px){
+
+section{
+padding:60px 18px!important;
+}
+
+.navbar{
+padding:15px!important;
+flex-direction:column;
+gap:15px;
+}
+
+.logo{
+font-size:26px!important;
+text-align:center;
+}
+
+.logo span{
+font-size:10px!important;
+}
+
+.nav-links{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:12px!important;
+padding:0;
+}
+
+.nav-links a{
+font-size:15px;
+}
+
+.hero{
+min-height:70vh;
+padding:30px 15px!important;
+}
+
+.hero-content{
+padding:0!important;
+}
+
+.hero-content h1{
+font-size:38px!important;
+line-height:1.2;
+}
+
+.hero-content h2{
+font-size:22px!important;
+}
+
+.hero-content p{
+font-size:15px!important;
+}
+
+.hero-btn,
+.shop-btn,
+.contact-btn,
+.whatsapp-btn,
+.instagram-btn,
+.product-info button{
+width:100%;
+}
+
+.product-grid,
+.category-grid,
+.gallery-grid,
+.review-grid,
+.contact-info,
+.footer-content{
+display:grid!important;
+grid-template-columns:1fr!important;
+gap:20px!important;
+}
+
+.product-card,
+.category-card{
+width:100%!important;
+max-width:340px;
+margin:auto;
+}
+
+.gallery-item{
+height:300px!important;
+}
+
+.category-card{
+height:260px!important;
+}
+
+.contact-box,
+.footer-content{
+width:100%;
+}
+
+.map-section iframe{
+height:260px!important;
+}
+
+.products h2,
+.categories h2,
+.gallery h2,
+.reviews h2,
+.contact h2{
+font-size:30px!important;
+}
+
+.footer{
+padding:50px 20px!important;
+}
+
+img{
+max-width:100%;
+height:auto;
+display:block;
+}
+
+}
+
+/* ===========================
+   SMALL MOBILE
+=========================== */
+
+@media (max-width:480px){
+
+.hero-content h1{
+font-size:30px!important;
+}
+
+.hero-content h2{
+font-size:18px!important;
+}
+
+.hero-content p{
+font-size:14px!important;
+}
+
+.logo{
+font-size:22px!important;
+}
+
+.products h2,
+.categories h2,
+.gallery h2,
+.reviews h2,
+.contact h2{
+font-size:26px!important;
+}
+
+.product-card{
+max-width:100%;
+}
+
+.gallery-item{
+height:260px!important;
+}
+
+}
