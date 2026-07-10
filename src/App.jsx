@@ -3,7 +3,7 @@ import Cart from "./components/Cart";
 import { useState } from "react";
 import "./styles/App.css";
 import Gallery from "./components/Gallery";
-import WhatsApp from "./components/WhatsApp";
+import WhatsApp from "./components/Whatsapp";
 import Navbar from "./components/Navbar";
 import Reviews from "./components/Reviews";
 import Hero from "./components/Hero";
