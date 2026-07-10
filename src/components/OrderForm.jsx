@@ -19,9 +19,23 @@ function OrderForm() {
   const submitOrder = (e) => {
     e.preventDefault();
 
-    alert(
-      `Order Received!\nName: ${form.name}\nPhone: ${form.phone}`
-    );
+    const message = 
+`🛍️ New Order - Nakshatra Clothes
+
+👤 Name: ${form.name}
+
+📱 Mobile: ${form.phone}
+
+📍 Address:
+${form.address}
+
+Thank you 😊`;
+
+    const whatsappNumber = "919834355600";
+
+    const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+
+    window.open(whatsappURL, "_blank");
 
     setForm({
       name: "",
@@ -64,7 +78,7 @@ function OrderForm() {
           value={form.address}
           onChange={handleChange}
           required
-        />
+        ></textarea>
 
         <button type="submit">
           Confirm Order ✅
